@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Calculator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="icon" href="./images/icons8-calculator-100.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <!--
+    <nav class="navbar-nav">
+      <p id="navheader"><img src="./images/icons8-calculator-100.png" width="100" height="100" alt="">Calculator</p>
+    </nav>
+    -->
+
+    <!-- Display Calculations -->
+    <div id="calculation_box">
+      <p id="calculation_output"></p>
+    </div>
+
+    <!--Controls-->
+    <section id="controls">
+      <div id="numbers">
+        <div class="row">
+          <button id="button_seven" onclick="calculationBox(7)" type="button" name="button_yes" class="btn_calc">7</button>
+          <button id="button_yes" onclick="calculationBox(8)" type="button" name="button_yes" class="btn_calc">8</button>
+          <button id="button_yes" onclick="calculationBox(9)" type="button" name="button_yes" class="btn_calc">9</button>
+        </div>
+        <div class="row">
+          <button id="button_yes" onclick="calculationBox(4)" type="button" name="button_yes" class="btn_calc">4</button>
+          <button id="button_yes" onclick="calculationBox(5)" type="button" name="button_yes" class="btn_calc">5</button>
+          <button id="button_yes" onclick="calculationBox(6)" type="button" name="button_yes" class="btn_calc">6</button>
+        </div>
+        <div class="row">
+          <button id="button_yes" onclick="calculationBox(1)" type="button" name="button_yes" class="btn_calc">1</button>
+          <button id="button_yes" onclick="calculationBox(2)" type="button" name="button_yes" class="btn_calc">2</button>
+          <button id="button_yes" onclick="calculationBox(3)" type="button" name="button_yes" class="btn_calc">3</button>
+        </div>
+        <div class="row">
+          <button id="button_yes" onclick="calculationBox('.')" type="button" name="button_yes" class="btn_calc">.</button>
+          <button id="button_yes" onclick="calculationBox(0)" type="button" name="button_yes" class="btn_calc">0</button>
+          <button id="button_yes" onclick="reverseAction()" type="button" name="button_yes" class="btn_calc">↶</button>
+        </div>
+      </div>
+      <div class="signs">
+        <div class="row">
+          <button id="button_yes" onclick="calculationBox('÷')" type="button" name="button_yes" class="btn_calc">÷</button>
+        </div>
+        <div class="row">
+          <button id="button_yes" onclick="calculationBox('×')" type="button" name="button_yes" class="btn_calc">×</button>
+        </div>
+        <div class="row">
+          <button id="button_yes" onclick="calculationBox('-')" type="button" name="button_yes" class="btn_calc">-</button>
+        </div>
+        <div class="row">
+          <button id="button_yes" onclick="calculationBox('+')" type="button" name="button_yes" class="btn_calc">+</button>
+        </div>
+        <div class="row">
+          <button id="button_equal" onclick="printSolution()" type="button" name="button_yes" class="btn_calc">=</button>
+        </div>
+      </div>
+      <div class="special_signs">
+        <div class="row">
+          <button id="button_yes" onclick="calculationBox('%')" type="button" name="button_yes" class="btn_calc">%</button>
+        </div>
+        <div class="row">
+          <button id="button_yes" onclick="calculationBox('^')" type="button" name="button_yes" class="btn_calc">^</button>
+        </div>
+        <div class="row">
+          <button id="button_yes" onclick="calculationBox('(')" type="button" name="button_yes" class="btn_calc">(</button>
+        </div>
+        <div class="row">
+          <button id="button_yes" onclick="calculationBox(')')" type="button" name="button_yes" class="btn_calc">)</button>
+        </div>
+        <div class="row">
+          <button id="button_yes" onclick="deleteLine()" type="button" name="button_yes" class="btn_calc">del</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- javascript -->
+    <script src="calculator.js" type="text/javascript"></script>
+  </body>
+</html>
